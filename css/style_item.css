@@ -1,0 +1,362 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+.container-fuilt-Head{
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    top: 0%;
+    position: fixed;
+
+    z-index: 1;
+}
+.container-fuilt-Head .container-Head{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+.container-fuilt-Head .container-Head .menu-bar ,.home ,.logo ,.notification ,.Login{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fuilt-Head .container-Head .home a{
+    color: black;
+}
+.container-fuilt-Head .container-Head .menu-bar i , .home i , .notification i{
+    font-size: 24px;
+    cursor: pointer;
+}
+.container-fuilt-Head .container-Head .logo img{  
+    height: 55%;
+}
+.container-fuilt-Head .container-Head .Login span{
+    font-size: 20px;
+}
+
+.menu{
+    position: fixed;
+    
+    height: 100%;
+    background-color: white;
+
+    top: 0%;
+    left: -100%;
+    transition: 0.5s;
+
+    /* for work next from popup left menu */
+    z-index: 2;
+}
+.menu .txt-box{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+.menu .txt-box h1{
+    font-size: 22px;
+}
+.menu .left-menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #555555;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.menu .left-menu ul li a:hover{
+    color: #333;
+}
+.popupMenu{
+    background-color: rgba(0, 0, 0, 0.631);
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+.notifition-popup {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.883);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    display: none;
+    z-index: 1;
+}
+.notifition-popup .exit{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.notifition-popup .exit i{
+    font-size: 40px;
+    margin-left: 20px;
+    color: dimgray;
+}
+.notifition-popup .txt-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.notifition-popup .txt-box h5 i{
+    font-size: 25px;
+}
+.notifition-popup .btn-box {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+.notifition-popup .btn-box .box-shop{
+    width: 200px;
+    height: 50px;
+    margin-right: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.notifition-popup .btn-box .box-shop a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.container-fuilt-promotion{
+    margin-top: 80px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e6e619;
+    padding: 15px;
+}
+.container-fuilt-promotion .txt-promotion{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+.container-fuilt-promotion .txt-promotion p{
+    font-size: 14px;
+    margin: 0%;
+    color: #2952a3;
+}
+
+.container-fuilt-item{
+    width: 100%;
+    overflow: hidden;
+}
+.container-fuilt-item .container-item{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container-fuilt-item .container-item .length-item{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.container-fuilt-item .container-item .item{
+    height: 550px;
+}
+.container-fuilt-item .container-item .item .img-box{
+    height: 75%;
+}
+.container-fuilt-item .container-item .item .img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container-fuilt-item .container-item .item .img-box img:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    box-shadow: 0px 0px 8px 0px #333;
+}
+.container-fuilt-item .container-item .item .txt-box{
+    width: 90%;
+    height: 25%;
+    margin: auto;
+}
+.container-fuilt-item .container-item .item .txt-box .txt-price{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: end;
+}
+.container-fuilt-item .container-item .item .txt-box .txt-price h6{
+    font-size: 18px;
+}
+.container-fuilt-item .container-item .item .txt-box .txt-title{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: start;
+}
+
+
+.container-end{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.container-end .container-item{
+    height: 170px;
+}
+.container-end .container-item .title-box{
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+.container-end .container-item .title-box span{
+    color: white;
+    font-size: 20px;
+}
+.container-end .container-item .item-box{
+    height: 70%;
+}
+.container-end .container-item .item-box img{
+    height: 50%;
+}
+.container-end .container-item .item-box span{
+    display: block;
+    color: white;
+}
+.container-proweredBy{
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  
+    .container-fuilt-Head .container-Head{
+        width: 100%; 
+    }
+    .container-fuilt-Head .container-Head .menu-bar ,.home ,.logo ,.notification ,.Login{
+        height: 70px;
+    } 
+    .container-fuilt-Head .container-Head .logo img{  
+        height: 45%;
+    }
+    .notifition-popup .txt-box h5,p{
+        font-size: 15px;
+    }
+    .notifition-popup .btn-box .box-shop a{
+        font-size: 12px;
+    }
+    .container-slide{
+        height: 200px;
+    }
+    .container-fuilt-promotion{
+        margin-top: 70px;
+    }
+    .container-fuilt-promotion .txt-promotion p{
+        font-size: 12px;
+    }
+    
+    .container-end{
+        width: 95%;
+    }
+    .container-end .container-item{
+        height: 140px;
+    }
+    .container-end .container-item .title-box span{
+        font-size: 15px;
+    }
+    .container-end .container-item .item-box span{
+        font-size: 14px;
+    }
+    
+    .container-fuilt-item .container-item{
+        width: 95%;
+    }
+    .container-fuilt-item .container-item .item{
+        height: 400px;
+    }
+    .container-fuilt-item .container-item .length-item{
+        height: 40px;
+    }
+    .container-fuilt-item .container-item .length-item h4{
+        font-size: 18px;
+    }
+    .container-fuilt-item .container-item .item .txt-box .txt-price h6{
+        font-size: 18px;
+    }
+    .container-fuilt-item .container-item .item .txt-box .txt-title p{
+        font-size: 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .container-fuilt-Head .container-Head{
+        width: 100%; 
+    }
+    .container-fuilt-Head .container-Head .menu-bar ,.home ,.logo ,.notification ,.Login{
+        height: 70px;
+    }
+    .container-fuilt-promotion .txt-promotion p{
+        font-size: 12px;
+    } 
+    .container-fuilt-promotion{
+        margin-top: 70px;
+    }
+    .container-fuilt-item .container-item{
+        width: 95%;
+    }
+    .container-fuilt-item .container-item .highlights {
+        height: 550px;
+    }
+    .container-fuilt-item .container-item .length-item{
+        height: 40px;
+    }
+    .container-fuilt-item .container-item .length-item h4{
+        font-size: 18px;
+    }
+    .container-fuilt-item .container-item .item .txt-box .txt-price h6{
+        font-size: 15px;
+    }
+    .container-fuilt-item .container-item .item .txt-box .txt-title p{
+        font-size: 13px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container-fuilt-item .container-item .item {
+        height: 300px;
+    }
+    .container-fuilt-item .container-item .item .txt-box .txt-price h6{
+        font-size: 14px;
+    }
+    .container-fuilt-item .container-item .item .txt-box .txt-title p{
+        font-size: 13px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {  
+    .container-fuilt-item .container-item .item {
+        height: 420px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
